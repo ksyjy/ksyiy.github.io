@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员注册</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="re-bg">
+	<!-- 头部 -->
+	<div class="re-header">
+		<div class="banxin">
+			<div class="re-header-l fl">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<div class="re-main">
+		<div class="re-box">
+			<div class="re-content">
+				<form action="login.html" method="post" onsubmit="return zhuce()">
+					<span class="zhuce-header">会员注册</span>
+					<div class="form-group">
+						<span class="left fl"><i class="fa fa-user" aria-hidden="true"></i></span>
+						<input id="username" type="text" class="fl" placeholder="会员名" onkeyup="user()">
+						<br style="clear:both">
+						<div class="panduan"></div>
+					</div>
+					
+					<div class="form-group">
+						<span class="left fl"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						<input id="email" type="text" class="fl" placeholder="邮箱" onkeyup="emails()">
+						<br style="clear:both">
+						<div class="panduan"></div>
+					</div>
+					<div class="form-group">
+						<span class="left fl"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+						<input id="pwd" type="password" class="fl" placeholder="密码" onkeyup="pwds()">
+						<br style="clear:both">
+						<div class="panduan"></div>
+					</div>
+					
+					<div class="form-group">
+						<span class="left fl"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+						<input id="repwd" type="password" class="fl" placeholder="重复密码" onkeyup="repwds()">
+						<br style="clear:both">
+						<div class="panduan"></div>
+					</div>
+
+					<div class="form-group yanzheng">
+						<span class="left fl"><i class="fa fa-shield" aria-hidden="true"></i></span>
+						<input id="yanzheng" type="text" class="fl" placeholder="验证码" onkeyup="yanzhengs()">
+						<div class="yanzhengma fr">
+							<img src="images/m1.png" alt="" style="display: block">
+							<img src="images/entrance (1).png" alt="" >
+							<img src="images/entrance (2).png" alt="" >
+							<img src="images/entrance (3).png" alt="" >
+							<img src="images/entrance (4).png" alt="" >
+							<img src="images/entrance (5).png" alt="" >
+							<img src="images/entrance (6).png" alt="" >
+							<img src="images/entrance (7).png" alt="" >
+							<img src="images/entrance (8).png" alt="" >
+							<img src="images/entrance (9).png" alt="" >
+							<img src="images/entrance (10).png" alt="" >
+						</div>
+						<br style="clear:both">
+						<div class="panduan"></div>
+					</div>
+
+					<button>立即注册</button>
+					<span class="go-login fr">已经有账号了？去<a href="login.html">登录</a></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- footer脚部 -->
+	<div class="footer one login-footer">
+		<div class="banxin">
+			
+			<div class="copyright">
+				我的网站 版权所有 2008-2014 湘ICP备8888888
+			</div>
+			<div class="zuozhe">
+				Powered by KSY 2017.09.20
+			</div>
+		</div>
+	</div>
+	<script src="js/register.js"></script>
+</body>
+</html>

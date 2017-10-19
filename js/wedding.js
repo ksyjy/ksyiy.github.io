@@ -1,0 +1,46 @@
+$(".first").find(".w-main-one-content").addClass("goleft");
+// 鼠标滚动时需要的特效，元素左移
+$(window).scroll(function(){
+	if($("body,html").scrollTop()>0){
+		if($("body,html").scrollTop()>$(".first").offset().top){
+			$(".second").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body,html").scrollTop()>$(".second").offset().top){
+			$(".third").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body,html").scrollTop()>$(".third").offset().top){
+			$(".forth").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body,html").scrollTop()>$(".forth").offset().top){
+			$(".five").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body,html").scrollTop()>$(".five").offset().top){
+			$(".six").find(".w-main-one-content").addClass("goleft");
+		}
+	}
+	else{
+		if($("body").scrollTop()>$(".first").offset().top){
+			$(".second").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body").scrollTop()>$(".second").offset().top){
+			$(".third").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body").scrollTop()>$(".third").offset().top){
+			$(".forth").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body").scrollTop()>$(".forth").offset().top){
+			$(".five").find(".w-main-one-content").addClass("goleft");
+		}
+		if($("body").scrollTop()>$(".five").offset().top){
+			$(".six").find(".w-main-one-content").addClass("goleft");
+		}
+	}
+	
+})
+//鼠标放上去向右移
+$(".w-main-one-content").mouseover(function(){
+	$(this).css({"left":"9%"});
+}).mouseleave(function(){
+	$(this).css({"left":"4%"});
+})
+	
